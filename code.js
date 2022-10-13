@@ -36,3 +36,11 @@ function isVowel(input){
         return false;
     }
 }
+
+function add(x, y){
+    if(!isNaN(parseInt(x)) && !isNaN(parseInt(y))){
+        return parseInt(x) + parseInt(y);
+    }else{
+        return "NaN";
+    }
+}
