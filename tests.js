@@ -52,3 +52,36 @@ describe("sayHello", function(){
         expect(sayHello([1,2,3,4])).toBe("Hello, World!")
     });
 });
+
+describe("isFive", function(){
+    it('should be a function', function () {
+        expect(typeof isFive).toBe("function")
+    });
+    it('should return true when given 5 as a number input', function () {
+       expect(isFive(5)).toBe(true)
+    });
+    it('should return true when given 5 as a string input', function () {
+        expect(isFive("5")).toBe(true)
+    });
+    it('should return false when given 3 as a number input', function () {
+        expect(isFive(3)).toBe(false)
+    });
+    it('should return false when given 3 as a string input', function () {
+        expect(isFive("3")).toBe(false)
+    });
+    it('should return false when given false input', function () {
+        expect(isFive(false)).toBe(false)
+    });
+    it('should return false when given null as input', function () {
+        expect(isFive(null)).toBe(false)
+    });
+    it('should return false when the function call is empty', function () {
+        expect(isFive()).toBe(false)
+    });
+    it('should return false when given an empty string input', function () {
+        expect(isFive("")).toBe(false)
+    });
+    it('should return false when given an array as input', function () {
+        expect(isFive([5,6,7,8])).toBe(false)
+    });
+});
