@@ -18,3 +18,11 @@ function isFive(input){
         return false;
     }
 }
+
+function isEven(input){
+    if(parseInt(input) % 2 === 0){
+        return true;
+    }else {
+        return false;
+    }
+}
