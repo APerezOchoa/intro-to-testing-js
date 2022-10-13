@@ -30,4 +30,25 @@ describe("sayHello", function(){
     it('should return the string "Hello, Pat! when executed.', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!")
     });
+    it('should return the string "Hello, World! when executed.', function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it('should return the string "Hello, World! when given true as input.', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('should return the string "Hello, World! when given false as input.', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+    it('should return the string "Hello, World! when given null as input.', function () {
+        expect(sayHello(null)).toBe("Hello, World!")
+    });
+    it('should return the string "Hello, World! when given an empty string as input.', function () {
+        expect(sayHello("")).toBe("Hello, World!")
+    });
+    it('should return the string "Hello, World! when given 2.3 as input.', function () {
+        expect(sayHello(2.3)).toBe("Hello, World!")
+    });
+    it('should return the string "Hello, World! when given an array as input.', function () {
+        expect(sayHello([1,2,3,4])).toBe("Hello, World!")
+    });
 });
