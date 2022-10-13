@@ -31,12 +31,7 @@ function isVowel(input){
     if(input === undefined){
         return false;
     }else if(input.length === 1) {
-        let vowel = ["a", "e", "i", "o", "u"]
-        for (i = 0; i < vowel.length; i++) {
-            if (input.toLowerCase() === vowel[i]) {
-                return true;
-            }
-        }
+        return /[aeiouAEIOU]/.test(input);
     }else {
         return false;
     }
